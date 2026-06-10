@@ -18,12 +18,14 @@ body {
   color: #e2e8f0;
 }
 
+/* Tailwind CSS is used for utility classes */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 10px;
+width: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -39,13 +41,14 @@ body {
   background: #2563eb;
 }
 
+/* Animations */
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+from {
+opacity: 0;
+}
+to {
+opacity: 1;
+}
 }
 
 @keyframes slideUp {
@@ -67,8 +70,9 @@ body {
   animation: slideUp 0.6s ease-out;
 }
 
+/* Card hover effect */
 .card-hover {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-hover:hover {
@@ -76,9 +80,10 @@ body {
   box-shadow: 0 20px 40px rgba(59, 130, 246, 0.3);
 }
 
+/* Gradient text */
 .gradient-text {
-  background: linear-gradient(135deg, #3b82f6, #8b5cf6, #ec4899);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+background: linear-gradient(135deg, #3b82f6, #8b5cf6, #ec4899);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
 }
